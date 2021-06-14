@@ -19,11 +19,11 @@ jobs:
     steps:
 
       - name: ServiceNow CI/CD Apply Changes
-        uses: ServiceNow/sncicd-apply-changes@2.0.0
+        uses: ServiceNow/sncicd-apply-changes@1.0.0
         env:
-          nowUsername: "Pankaj"
-          nowPassword: "12345"
-          nowSourceInstance: "https://dev96450.service-now.com"
+          snowUsername: "Pankaj"
+          snowPassword: "12345"
+          snowSourceInstance: "https://dev96450.service-now.com"
           appSysID: "07dfb2ec07b83410a188f16c7c1ed028"
 
       - name: ServiceNow CI/CD Publish App
