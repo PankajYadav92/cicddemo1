@@ -37,7 +37,7 @@ jobs:
         env:
           snowUsername: "Pankaj"
           snowPassword: "12345"
-          snowSourceInstance: "https://dev96450.service-now.com"
+          snowSourceInstance: "dev96450"
           appSysID: "07dfb2ec07b83410a188f16c7c1ed028"
           
     # This is required to pass the version number output from Publish App 
@@ -75,7 +75,7 @@ jobs:
         env:
           snowUsername: "Pankaj"
           snowPassword: "12345"
-          snowInstallInstance: "https://dev82957.service-now.com"
+          snowInstallInstance: "dev82957"
           appSysID: "07dfb2ec07b83410a188f16c7c1ed028"
 
       - name: ServiceNow CI/CD Run ATF Test Suite
@@ -85,7 +85,7 @@ jobs:
         env:
           snowUsername: "Pankaj"
           snowPassword: "12345"
-          snowInstallInstance: "https://dev82957.service-now.com"
+          snowInstallInstance: "dev82957"
 
       - name: ServiceNow CI/CD Rollback App
         if: ${{ failure() && steps.install_app.outputs.rollbackVersion }}
@@ -95,7 +95,7 @@ jobs:
         env:
           snowUsername: "Pankaj"
           snowPassword: "12345"
-          snowInstallInstance: "https://dev82957.service-now.com"
+          snowInstallInstance: "dev82957"
           appSysID: "07dfb2ec07b83410a188f16c7c1ed028"
 
     # This is required to pass the version number output from Publish App 
@@ -131,5 +131,5 @@ jobs:
         env:
           snowUsername: "Pankaj"
           snowPassword: "12345"
-          snowInstallInstance: "https://dev113795.service-now.com"
+          snowInstallInstance: "dev113795"
           appSysID: "07dfb2ec07b83410a188f16c7c1ed028"
