@@ -23,7 +23,7 @@ jobs:
         env:
           snowUsername: "Pankaj"
           snowPassword: "12345"
-          snowSourceInstance: "dev96450.service-now.com"
+          snowSourceInstance: "dev96450"
           appSysID: "07dfb2ec07b83410a188f16c7c1ed028"
 
       - name: ServiceNow CI/CD Publish App
